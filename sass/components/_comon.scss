@@ -1,13 +1,10 @@
 .comon__list {
     display: flex;
     padding-left: 0px;
+    margin-bottom: 60px;
 
 }
-.social-fl {
-    display: flex;
-    flex-direction: column;
 
-}
 .comon__icon {
     fill: var(--adress-color);
     /* background-color: rgba(161, 139, 139, 0.1);
@@ -34,10 +31,15 @@
 .comon {
     display: flex;
     flex-direction: column;
-    margin-right: 93px;
+    @media screen and (min-width: 1200px){
+    margin-right: 93px;}
+    // align-items: flex-end;
 }
 
 .comon__text {
+    margin-left: auto;
+    margin-right: auto;
+    
     padding-bottom: 20px;
     margin-bottom: 0;
     font-family: Roboto;
@@ -48,4 +50,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    @media screen and (min-width: 1200px){
+        margin-left: 0;
+    }
 }

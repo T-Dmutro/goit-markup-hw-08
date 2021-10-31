@@ -12,7 +12,13 @@
     &.is-hidden {
     opacity: 0;
     pointer-events: none;}
+    @media screen and (min-width: 768px){
+        top: 0;
+        left: 25%;
+        
+    }
     @media screen and (min-width: 1200px){
+        left: 0;
         width: 100%;
     }
 }

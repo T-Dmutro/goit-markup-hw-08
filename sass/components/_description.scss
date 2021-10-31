@@ -4,7 +4,15 @@
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
+        @media screen and (min-width: 768px){
+            align-items: normal;
+            
+            width: 354px;
+            // margin-left: 15px;
+        }
         @media screen and (min-width: 1200px){
+        width: 270px;
+        padding: 0;
         margin-right: 30px;
         &:last-child {
         margin-right: 0px;
@@ -24,8 +32,12 @@
     & svg {
     width: 70px;
     height: 70px;}
-         @media screen and (min-width: 1200px){
-            display: flex;
+        @media screen and (min-width: 768px){
+           display: flex;
+           width: 354px;
+        }
+        @media screen and (min-width: 1200px){
+            
             width: 270px;
     }
 }
@@ -44,6 +56,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-title-color);
+        // @media screen and (min-width: 768px){
+        // justify-content: flex-start;
+        // }
 }
 
 .description__text {

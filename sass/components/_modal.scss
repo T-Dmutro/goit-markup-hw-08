@@ -147,8 +147,8 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 2;
+    font-size: 12px;
+    line-height: 1.16;
     /* identical to box height, or 171% */
     color: var(--secondary-title-color);
     letter-spacing: 0.03em;
@@ -156,6 +156,10 @@
         border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @media screen and (min-width: 1200px){
+           font-size: 14px;
+           line-height: 2;
+        }
         & span {
         display: flex;
         align-items: center;
