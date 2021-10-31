@@ -110,7 +110,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 480px;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   transition-property: background, border;
@@ -121,6 +121,12 @@
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    width: 100%;
+  }
 }
 
 .client--parameters {
@@ -373,11 +379,17 @@ h3 {
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 480px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .feature {
@@ -620,33 +632,47 @@ a .header__logo {
 
 .hero {
   display: block;
-  max-width: 100%;
+  max-width: 450px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-  /* height: 600px; */
-  padding-top: 200px;
-  padding-bottom: 200px;
+  margin: 0;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroy.jpg);
-  /* background-position: center;
-    background-size: cover; */
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero__box {
+  margin: 0;
+}
+
 .hero__text {
-  display: flex;
   justify-content: center;
-  box-sizing: content-box;
   margin-top: 0px;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--adress-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -853,13 +879,20 @@ a .header__logo {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 40px 39px 40px 41px;
+  padding: 93px 15px 94px 15px;
   transform: translate(-50%, -50%);
   min-height: 581px;
-  width: 528px;
+  width: 370px;
   background-color: var(--adress-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    padding: 40px 39px 40px 41px;
+  }
 }
 
 .modal__button {
