@@ -148,21 +148,36 @@
 }
 
 .client__list {
-  display: flex;
+  width: 480px;
   padding-left: 0px;
   text-decoration: none;
   list-style: none;
 }
 
 .client__company {
-  margin-right: 30px;
+  display: inline-block;
   border-radius: 4px;
-  width: 170px;
+  width: 208px;
   height: 92px;
 }
 
-.client__company:last-child {
-  margin-right: 0px;
+.client__company:nth-child(2n+1) {
+  margin-left: 14px;
+}
+
+.client__company:nth-child(2n) {
+  margin-right: 15px;
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .client__company {
+    width: 170px;
+    height: 92px;
+  }
+  .client__company:last-child {
+    margin-right: 0px;
+  }
 }
 
 .client__link {
@@ -227,6 +242,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 15px;
+  margin-bottom: 30px;
   background-color: var(--adress-color);
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -239,7 +256,7 @@
 
 .comand__foto {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -328,18 +345,27 @@ h3 {
 }
 
 .description {
-  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.description:last-child {
-  margin-right: 0px;
+@media screen and (min-width: 1200px) {
+  .description {
+    margin-right: 30px;
+  }
+  .description:last-child {
+    margin-right: 0px;
+  }
 }
 
 .description__box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-size: cover;
   background-color: #F5F4FA;
@@ -349,6 +375,13 @@ h3 {
 .description__box svg {
   width: 70px;
   height: 70px;
+}
+
+@media screen and (min-width: 1200px) {
+  .description__box {
+    display: flex;
+    width: 270px;
+  }
 }
 
 .description__icon {
@@ -369,7 +402,7 @@ h3 {
 
 .description__text {
   display: inline-block;
-  width: 270px;
+  width: 100%;
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.71;
@@ -378,10 +411,17 @@ h3 {
   color: var(--secondary-title-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .description__text {
+    width: 270px;
+  }
+}
+
 .container {
-  min-width: 480px;
+  min-width: 450px;
   margin-left: 15px;
   margin-right: 15px;
+  margin: auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -394,8 +434,6 @@ h3 {
 
 .main {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .feature {
@@ -411,7 +449,6 @@ h3 {
 }
 
 .list {
-  display: flex;
   /* margin-bottom: 94px; */
   list-style: none;
   text-decoration: none;
@@ -421,6 +458,12 @@ h3 {
 .list a {
   list-style-type: none;
   list-style: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .list {
+    display: flex;
+  }
 }
 
 .pagge::after {
@@ -638,9 +681,9 @@ a .header__logo {
 
 .hero {
   display: block;
-  max-width: 450px;
+  max-width: 480px;
   height: auto;
-  margin: 0;
+  width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroy.jpg);
@@ -1125,21 +1168,29 @@ textarea:focus {
 }
 
 .prezent--retreat {
-  padding-bottom: 94px;
+  display: none;
 }
 
-.prezent {
-  display: flex;
-  justify-content: center;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  margin-left: auto;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
+@media screen and (min-width: 1200px) {
+  .prezent--retreat {
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .prezent {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
 .social {

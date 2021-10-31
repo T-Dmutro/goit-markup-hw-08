@@ -1,18 +1,21 @@
 .prezent--retreat {
-
-    padding-bottom: 94px;
+    display: none;
+     @media screen and (min-width: 1200px){
+    padding-bottom: 94px;}
 }
 
 .prezent {
-    display: flex;
-    justify-content: center;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
+    
+     @media screen and (min-width: 1200px){
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;}
 }
