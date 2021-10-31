@@ -1,0 +1,72 @@
+.comand--parameter {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--section-color);
+}
+
+.comand {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    justify-content: center;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-title-color);
+}
+
+.comand__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--adress-color);
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    &:last-of-type {
+    margin-right: 0px;}
+}
+
+.comand__foto {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+.comand__cart p,
+h3 {
+    display: flex;
+    justify-content: center;}
+
+.comand__cart p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.comand__person {
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-title-color);
+
+}
+.comand-proffession {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--secondary-title-color);
+}

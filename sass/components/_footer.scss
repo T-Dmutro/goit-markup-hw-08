@@ -1,0 +1,61 @@
+.footer {
+    display: flex;
+    background-color: var(--futer-color);
+    font-style: normal;
+    list-style-type: none;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    & a {
+    display: inline-block;}
+    /* margin-bottom: 20px;*/
+
+}
+.footer__logo {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer__adress {
+    display: flex;
+}
+
+
+
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    padding-right: 70px;
+
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+}
+
+.footer__maps {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    columns: var(--adress-color);
+    color: var(--adress-color);
+}
+
+.footer__item {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 9px;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 0px;
+    &:last-child {
+    margin-bottom: 0px;}
+}

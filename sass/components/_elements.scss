@@ -1,0 +1,48 @@
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature {
+    /*padding-bottom: 94px;*/
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+}
+.list {
+    display: flex;
+    /* margin-bottom: 94px; */
+    list-style: none;
+    text-decoration: none;
+    padding-inline-start: 0px;
+    & a {
+    list-style-type: none;
+    list-style: none;}
+
+}
+.pagge::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--hover-effect-color);
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    border-radius: 2px;
+
+}
+.last {
+    margin-right: 0px;
+}
+.portfolio {
+    border-bottom: 1px solid #ECECEC;
+
+}

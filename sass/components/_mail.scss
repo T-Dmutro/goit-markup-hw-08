@@ -1,0 +1,50 @@
+.mail__contakt {
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-title-color);
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+    transition-property: color,
+        border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    :focus {
+    color: var(--hover-effect-color);}
+    & svg {
+    width: 16px;
+    height: 12px;}
+}
+
+.mail__icon {
+    display: flex;
+    /* margin: right 10px; */
+}
+
+.mail--left {
+    margin-left: 10px;
+}
+
+
+.mail--hover:hover {
+    color: var(--hover-effect-color);
+    fill: currentColor;
+}
+
+.mail {
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.mail__box {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 30px;
+    text-decoration: none;
+    list-style: none;
+}

@@ -1,0 +1,75 @@
+.letter {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.letter__label {
+    display: flex;
+    align-items: center;
+}
+
+.letter__box {
+    align-items: center;
+}
+
+.letter__input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+}
+
+
+.letter__text {
+    margin-top: 11.62px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    justify-content: flex-start;
+    color: var(--adress-color);
+}
+
+.letter__button {
+    /* display: flex;
+    flex-direction: column;
+     */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--adress-color);
+    background-color: var(--hover-effect-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    width: 200px;
+    height: 50px;
+}
+
+
+.letter__picture {
+    margin-left: 10px;
+    /* margin-top: 13px; */
+    width: 24px;
+    height: 24px;
+    right: 22px;
+
+
+}

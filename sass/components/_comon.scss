@@ -1,0 +1,51 @@
+.comon__list {
+    display: flex;
+    padding-left: 0px;
+
+}
+.social-fl {
+    display: flex;
+    flex-direction: column;
+
+}
+.comon__icon {
+    fill: var(--adress-color);
+    /* background-color: rgba(161, 139, 139, 0.1);
+    border-radius: 50%; */
+    width: 44px;
+    height: 44px;
+
+}
+.comon__link {
+    background-color: rgba(161, 139, 139, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition-property: fill,
+        background-color,
+        border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+    background-color: var(--hover-effect-color);
+    border-radius: 50%;}
+    &:last-child {
+    margin-right: 0px;}
+}
+.comon {
+    display: flex;
+    flex-direction: column;
+    margin-right: 93px;
+}
+
+.comon__text {
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
