@@ -502,6 +502,19 @@ h3 {
   display: inline-block;
 }
 
+.footer--flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer--flex {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .footer__logo {
   display: flex;
   margin-bottom: 20px;
@@ -748,6 +761,7 @@ a .header__logo {
 .letter {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .letter__label {
@@ -756,6 +770,8 @@ a .header__logo {
 }
 
 .letter__box {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
