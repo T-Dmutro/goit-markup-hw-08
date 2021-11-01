@@ -1,13 +1,16 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    & .mail__box {
-    /*margin-top: 32px;
-    */
-    /*padding-bottom: 32px;*/
-    padding-top: 32px;
-    margin-bottom: 32px;}
+   
+    @media screen and (min-width: 768px){
+        display: flex;
+        align-items: center;
+        justify-content: center;}
+    @media screen and (min-width: 1200px){
+        & .mail__box {
+            padding-top: 32px;
+            margin-bottom: 32px;
+        }
+    }
+    
     &--portfolio{
         border-bottom: 1px solid #ECECEC;
         
@@ -37,11 +40,16 @@
 .header__box {
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-left: 15px;
+    margin-right: 75px;
+    @media screen and (min-width: 1200px){
+
+    }
 }
 
 .header__studio {
     display: flex;
-    margin-right: 93px;
+    // margin-right: 88px;
 
     font-family: Raleway;
     font-weight: 700;
@@ -49,9 +57,15 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: black;
+        @media screen and (min-width: 1200px){
+            margin-right: 93px;
+        }
 }
 
 .header__item {
+     @media screen and (max-width: 767px) {
+         display: none;
+     }
     position: relative;
 }
 

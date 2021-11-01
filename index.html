@@ -13,17 +13,29 @@
 </head>
 <body> 
  
-    <!-- <header>
+    <header>
         <div class="container header">
+           
         <nav class="header__nav">
             <div class="header__box"><a class="header__logo " href="./index.html" >Web<span class="header__studio">Studio</span></a></div>
+            <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle__svg"  >
+                            <use class="menu-toggle__use" href="./img/icons.svg#menu">
+                            </use>
+                        </svg>
+          </svg>
+        </button>
             <ul class="header list">
                 <li class="header__item">
                    <a class="header__button link pagge" href="./index.html">Студия</a> 
                 </li>
-                <li>
+                <li class="header__item">
                    <a class="header__button link" href="./portfolio.html">Портфолио</a> 
-                </li><li>
+                </li><li class="header__item">
                    <a class="header__button link" href="http://1">Контакты</a> 
                 </li>
             </ul>
@@ -37,9 +49,9 @@
             </ul>
         
         </div>
-    </header> -->
+    </header> 
  
-        <!--section main-->
+        <!-- section main -->
         
         <main class="main">
         <section class="hero ">
@@ -98,7 +110,7 @@
                     <button class="modal__send" type="submit">Отправить</button></div>
             </form>
             </div></div></div></section>
-        <!-- section peculiarity -->
+         <!-- section peculiarity -->
         <section class="feature">
             <div class="container">
             <ul class="list">
@@ -410,6 +422,46 @@
         </div>
 
     </section>
+    <div class="menu-container js-menu-container " id="mobile-menu">
+         <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40"class="menu-toggle__picture">
+            <use class="menu-toggle__use w" href="./img/icons.svg#close-black">
+            </use>
+        </svg>
+        </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+                   <a class="mobile-menu__link link pagge" href="./index.html">Студия</a> 
+                </li>
+                <li class="mobile-menu__item">
+                   <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a> 
+                </li><li class="mobile-menu__item">
+                   <a class="mobile-menu__link link" href="http://1">Контакты</a> 
+                </li>
+        </ul>
+        <ul class="mobile-menu__mail"> 
+                 <li class="mobile-menu__box"><a class="mobile-menu__contakt " href="tel:+380961111111">
+                    <span class="mobile-menu--tell">+38 096 111 11 11</span></a></li>               
+                <li class="mobile-menu__box"><a class="mobile-menu__contakt " href="mailto:info@devstudio.com">
+                    <span class="mobile-menu--mail">info@devstudio.com</span></a></li>
+                
+            </ul>
+            <ul class="social-menu list">
+                <li class="social__item">
+                   <a class="social__button link " href="http://1">Instagram</a> 
+                </li>
+                <li class="social__item">
+                   <a class="social__button link" href="http://1">Instagram</a> 
+                </li><li class="social__item">
+                   <a class="social__button link" href="http://1">Facebook</a> 
+                </li>
+                <li class="social__item">
+                   <a class="social__button link" href="http://1">LinkedIn</a> 
+                </li>
+            </ul>        
+    </div></div>
+
     </main>
     <footer class="footer ">
         <div class="container footer--flex" >
@@ -495,7 +547,13 @@
         </div>
       </div>
     </footer>
-  
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
  </body>
 </html>

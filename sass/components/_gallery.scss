@@ -17,10 +17,14 @@
 }
 .gallery__list {
     display: flex;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
     list-style: none;
     text-decoration: none;
     padding-inline-start: 0px;
+        @media screen and (min-width: 1200px){
+            margin-bottom: 50px;
+        }
 }
 .gallery__button {
     display: flex;

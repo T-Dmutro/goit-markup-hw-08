@@ -1,5 +1,5 @@
 .mail__contakt {
-    margin-right: 50px;
+    margin-right: 15px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -12,6 +12,9 @@
         border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     @media screen and (min-width: 1200px){
+         margin-right: 50px;
+     }
     &:hover,
     :focus {
     color: var(--hover-effect-color);}
@@ -26,7 +29,9 @@
 }
 
 .mail--left {
-    margin-left: 10px;
+    margin-left: 8px;
+        @media screen and (min-width: 1200px){
+        margin-left: 10px;}
 }
 
 
@@ -36,15 +41,30 @@
 }
 
 .mail {
-    margin-left: auto;
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+    @media screen and (min-width: 768px){
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
     margin-top: 0px;
-    margin-bottom: 0;
+    margin-bottom: 0;}
+    @media screen and (min-width: 1200px){
+        margin-left: auto;
+        flex-direction: row;
+    }
 }
 
 .mail__box {
     display: inline-block;
-    margin-left: auto;
-    margin-right: 30px;
+    
+   
     text-decoration: none;
     list-style: none;
+        @media screen and (min-width: 1200px){
+            margin-right: 30px;
+            margin-left: auto;
+
+        }
 }
