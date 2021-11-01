@@ -6,9 +6,8 @@
     padding-right: 15px;
         @media screen and (min-width: 768px){
             align-items: normal;
+            width: calc((100% - 2 * 30px) / 2);
             
-            width: 354px;
-            // margin-left: 15px;
         }
         @media screen and (min-width: 1200px){
         width: 270px;
