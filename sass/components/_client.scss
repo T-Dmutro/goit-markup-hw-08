@@ -22,6 +22,8 @@
     padding-left: 0px;
     text-decoration: none;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
         @media screen and (min-width: 768px){
             display: flex;
             width: 100%;
@@ -35,11 +37,13 @@
 }
 
 .client__company {
-    display: inline-block;
-    border-radius: 4px;
+    
     width: calc(((100% - 2 * 30px) / 2));
+    border-radius: 4px;
+    // width: 208px;
     height: 92px;
     @media screen and (max-width: 480px){
+        // width: calc(((100% - 2 * 30px) / 2));
     &:nth-child(2n+1){
         margin-left: 15px;
     }
