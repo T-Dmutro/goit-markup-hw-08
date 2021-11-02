@@ -910,6 +910,12 @@ a .header__logo {
   color: var(--adress-color);
 }
 
+@media screen and (max-width: 480px) {
+  .hero__text {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero__text {
     font-size: 44px;
@@ -1533,6 +1539,11 @@ ul {
   padding: 0;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -1564,7 +1575,7 @@ ul {
   background-color: #ffffff;
   z-index: 3;
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateX(130%);
   transition: transform 250ms ease-in-out;
 }
 

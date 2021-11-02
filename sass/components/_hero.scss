@@ -39,6 +39,9 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--adress-color);
+        @media screen and (max-width: 480px){
+            width: 100%;
+     }
         @media screen and (min-width: 1200px){
             
         font-size: 44px;
