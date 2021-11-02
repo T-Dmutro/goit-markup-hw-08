@@ -1,7 +1,9 @@
 .prezent--retreat {
     display: none;
+
      @media screen and (min-width: 1200px){
-    padding-bottom: 94px;}
+         display: flex;
+         padding-bottom: 94px;}
 }
 
 .prezent {
