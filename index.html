@@ -182,7 +182,12 @@
         <h2 class="comand">Наша команда</h2>
         <ul class="list">
             <li class="comand__list">
-                <img class="comand__foto" srcset="./img/comand/igor-pc.jpg 1x, ./img/comand/igor-pc-2x.jpg 2x" src="./img/comand/igor-pc.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                <picture>
+                    <source srcset="./img/comand/igor-pc.jpg 1x, ./img/comand/igor-pc-2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./img/comand/igor-tab.jpg 1x, ./img/comand/igor-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./img/comand/igor-mob.jpg 1x, ./img/comand/igor-mob-2x.jpg 2x" media="(min-width: 1200px)" />
+                    <img class="comand__foto"  src="./img/comand/igor-pc.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                </picture>
                 <div class="comand__cart">
                 <h3 class="comand__person">Игорь Демьяненко</h3>
                 <p class="comand__profession" lang="en"> Product Designer</p>
@@ -229,7 +234,13 @@
                 </div>
             </li>
             <li class="comand__list">
-                <img class="comand__foto" srcset="./img/comand/olga-pc.jpg 1x, ./img/comand/olga-pc-2x.jpg 2x" src="./img/comand/olga-pc.jpg" alt="Ольга Репина" width="270" height="260">
+                <picture>
+                    <source srcset="./img/comand/olga-pc.jpg 1x, ./img/comand/olga-pc-2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./img/comand/olga-tab.jpg 1x, ./img/comand/olga-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./img/comand/olga-mob.jpg 1x, ./img/comand/olga-mob-2x.jpg 2x" media="(min-width: 1200px)" />
+                    <img class="comand__foto"  src="./img/comand/olga-pc.jpg" alt="Ольга Репина" width="270" height="260">
+                </picture>
+                
                 <div class="comand__cart">
                 <h3 class="comand__person">Ольга Репина</h3>
                 <p class="comand__profession" lang="en"> Frontend Developer</P>
@@ -276,7 +287,13 @@
                 </div>
             </li>
             <li class="comand__list">
-                <img class="comand__foto" srcset="./img/comand/nikolay-pc.jpg 1x, ./img/comand/nikolay-pc-2x.jpg 2x" src="./img/comand/nikolay-pc.jpg" alt="Николай Тарасов" width="270" height="260">
+                <picture>
+                    <source srcset="./img/comand/nikolay-pc.jpg 1x, ./img/comand/nikolay-pc-2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./img/comand/nikolay-tab.jpg 1x, ./img/comand/nikolay-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./img/comand/nikolay-mob.jpg 1x, ./img/comand/nikolay-mob-2x.jpg 2x" media="(min-width: 1200px)" />
+                   <img class="comand__foto"  src="./img/comand/nikolay-pc.jpg" alt="Николай Тарасов" width="270" height="260">
+                </picture>
+                
                 <div class="comand__cart">
                 <h3 class="comand__person">Николай Тарасов</h3>
                 <p class="comand__profession" lang="en"> Marketing</p>
@@ -323,7 +340,13 @@
                 </div>
             </li>
             <li class="comand__list last">
-                <img class="comand__foto" srcset="./img/comand/mihail-pc.jpg 1x, ./img/comand/mihail-pc-2x.jpg 2x" src="./img/comand/mihail-pc.jpg" alt="Михаил Ермаков" width="270" height="260">
+                <picture>
+                    <source srcset="./img/comand/mihail-pc.jpg 1x, ./img/comand/mihail-pc-2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./img/comand/mihail-tab.jpg 1x, ./img/comand/mihail-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./img/comand/mihail-mob.jpg 1x, ./img/comand/mihail-mob-2x.jpg 2x" media="(min-width: 1200px)" />
+                   <img class="comand__foto"  src="./img/comand/mihail-pc.jpg" alt="Михаил Ермаков" width="270" height="260">
+                </picture>
+                
                 <div class="comand__cart">
                 <h3 class="comand__person">Михаил Ермаков</h3>
                 <p lang="en" class="comand__profession">UI Designer</p>
@@ -430,38 +453,39 @@
             </use>
         </svg>
         </button>
-
-      <ul class="mobile-menu">
-        <li class="mobile-menu__item">
-                   <a class="mobile-menu__link link pagge" href="./index.html">Студия</a> 
-                </li>
+            <div class="menu-container__box">
+                <ul class="mobile-menu">
                 <li class="mobile-menu__item">
-                   <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a> 
-                </li><li class="mobile-menu__item">
-                   <a class="mobile-menu__link link" href="http://1">Контакты</a> 
-                </li>
-        </ul>
-        <ul class="mobile-menu__mail"> 
-                 <li class="mobile-menu__box"><a class="mobile-menu__contakt " href="tel:+380961111111">
-                    <span class="mobile-menu--tell">+38 096 111 11 11</span></a></li>               
-                <li class="mobile-menu__box"><a class="mobile-menu__contakt " href="mailto:info@devstudio.com">
-                    <span class="mobile-menu--mail">info@devstudio.com</span></a></li>
+                        <a class="mobile-menu__link link pagge" href="./index.html">Студия</a> 
+                        </li>
+                        <li class="mobile-menu__item">
+                        <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a> 
+                        </li><li class="mobile-menu__item">
+                        <a class="mobile-menu__link link" href="http://1">Контакты</a> 
+                        </li>
+                </ul>
                 
-            </ul>
-            <ul class="social-menu list">
-                <li class="social__item">
-                   <a class="social__button link " href="http://1">Instagram</a> 
-                </li>
-                <li class="social__item">
-                   <a class="social__button link" href="http://1">Instagram</a> 
-                </li><li class="social__item">
-                   <a class="social__button link" href="http://1">Facebook</a> 
-                </li>
-                <li class="social__item">
-                   <a class="social__button link" href="http://1">LinkedIn</a> 
-                </li>
-            </ul>        
-    </div></div>
+                <ul class="mobile-menu__mail"> 
+                        <li class="mobile-menu__box"><a class="mobile-menu__contakt " href="tel:+380961111111">
+                            <span class="mobile-menu--tell">+38 096 111 11 11</span></a></li>               
+                        <li class="mobile-menu__box"><a class="mobile-menu__contakt " href="mailto:info@devstudio.com">
+                            <span class="mobile-menu--mail">info@devstudio.com</span></a></li>
+                        
+                    </ul>
+                <ul class="social-menu list">
+                        <li class="social__item">
+                        <a class="social__button link " href="http://1">Instagram</a> 
+                        </li>
+                        <li class="social__item">
+                        <a class="social__button link" href="http://1">Instagram</a> 
+                        </li><li class="social__item">
+                        <a class="social__button link" href="http://1">Facebook</a> 
+                        </li>
+                        <li class="social__item">
+                        <a class="social__button link" href="http://1">LinkedIn</a> 
+                        </li>
+                    </ul> </div>      
+    </div></div></div>
 
     </main>
     <footer class="footer ">

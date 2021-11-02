@@ -19,7 +19,11 @@
         display: none;
     }
 }
-
+.menu-container__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .menu-container {
     position: fixed;
     top: 0;
