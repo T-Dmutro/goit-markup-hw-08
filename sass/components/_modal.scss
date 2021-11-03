@@ -35,6 +35,12 @@
         border;
     transition-duration: 2000ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     @media screen and (min-width: 1200px){
+         position: absolute;
+         right: 8px;
+         top: 8px;
+         cursor: pointer;
+     }
     &:hover .modal__icon {
     fill: var(--hover-effect-color);}
 }
