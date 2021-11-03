@@ -7,6 +7,10 @@
   flex-wrap: wrap;
 }
 
+.cards__foto {
+  display: block;
+}
+
 @media screen and (max-width: 480px) {
   .cards__foto {
     width: 100%;
@@ -32,7 +36,7 @@
 
 .cards__item {
   position: relative;
-  width: 100%;
+  width: calc((100% - 1 * 30px) / 1);
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 30px;
@@ -71,14 +75,15 @@
 }
 
 .cards__cover {
-  display: flex;
+  width: 100%;
+  display: block;
   position: relative;
   overflow: hidden;
 }
 
 .cards__picture {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -447,8 +452,8 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -462,6 +467,7 @@ h3 {
   .description {
     width: 270px;
     padding: 0;
+    margin-left: 0;
     margin-right: 30px;
   }
   .description:last-child {
@@ -488,7 +494,7 @@ h3 {
 @media screen and (min-width: 768px) {
   .description__box {
     display: flex;
-    width: 354px;
+    width: 100%;
   }
 }
 
@@ -532,8 +538,6 @@ h3 {
 }
 
 .container {
-  margin-left: 15px;
-  margin-right: 15px;
   margin: 0 auto;
 }
 
@@ -737,9 +741,6 @@ h3 {
 }
 
 .gallery__menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -768,6 +769,7 @@ h3 {
 @media screen and (min-width: 1200px) {
   .gallery__list {
     margin-bottom: 50px;
+    justify-content: center;
   }
 }
 
