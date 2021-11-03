@@ -4,13 +4,16 @@
 
 }
 
-
-
 /*page2-portfolio*/
 .cards {
     flex-wrap: wrap;
 }
+.cards__foto{
+    @media screen and (max-width: 480px){
+        width: 100%;
+    }
 
+}
 .cards__foto:hover,
 .cards__foto:focus {
     background: #FFFFFF;
@@ -42,6 +45,9 @@
     
 }
 .cards__item{
+    @media screen and (min-width: 768px){
+        width: calc((100% - 1 * 30px) / 1);
+    }
 @media screen and (min-width: 768px) {
     width: calc((100% - 2 * 30px) / 2);
 }
@@ -71,6 +77,10 @@
     display: block;
     max-width: 100%;
     height: auto;
+    @media screen and (min-width: 480px){
+        width: 370px;
+        height: 294px;
+    }
 }
 
 .cards__text {
