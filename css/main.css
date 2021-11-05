@@ -117,17 +117,17 @@
   transform: translateY(100%);
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 364px) {
   .cards__text {
     padding-top: 45px;
-    font-size: 11px;
+    font-size: 13px;
     height: 100%;
   }
 }
 
-@media screen and (min-width: 331px) {
+@media screen and (min-width: 365px) {
   .cards__text {
-    font-size: 15px;
+    font-size: 16px;
     height: 100%;
     padding-top: 45px;
     width: 100%;
@@ -138,6 +138,11 @@
   .cards__text {
     font-size: 18px;
     padding-top: 63px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cards__text {
     max-width: 370px;
   }
 }
