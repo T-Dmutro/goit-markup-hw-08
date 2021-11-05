@@ -90,18 +90,18 @@
 .cards__text {
     position: absolute;
     top: 0;
-    padding-top: 63px;
+    
     padding-bottom: 63px;
     padding-left: 24px;
     padding-right: 24px;
     /* transform: translate(50%, 50%); */
     background-color: rgba(33, 150, 243, 0.9);
     color: var(--adress-color);
-    max-width: 370px;
+    
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    width: 100%;
     line-height: 1.55;
     /* or 156% */
     transition: transform 250ms;
@@ -110,6 +110,24 @@
     letter-spacing: 0.03em;
     opacity: 0;
     transform: translateY(100%);
+    @media screen and (max-width: 330px){
+        padding-top: 45px;
+        // padding-top: 0;
+        font-size: 11px;
+        height: 100%;
+        
+    }
+    @media screen and (min-width: 331px){
+        font-size: 15px;
+        height: 100%;
+        padding-top: 45px;
+        width: 100%;
+    }
+    @media screen and (min-width: 480px){
+        font-size: 18px;
+        padding-top: 63px;
+        max-width: 370px;
+    }
 
 }
 

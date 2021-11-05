@@ -9,8 +9,9 @@
     margin-right: 8px;
     &:last-child {
     margin-right: 0px;}
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
         margin-bottom: 15px;
+        margin-left: 15px;
     }
 }
 
@@ -25,7 +26,7 @@
     list-style: none;
     text-decoration: none;
     padding-inline-start: 0px;
-        @media screen and (min-width: 1200px){
+        @media screen and (min-width: 768px){
             margin-bottom: 50px;
             justify-content: center;
         }

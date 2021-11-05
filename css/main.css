@@ -97,18 +97,16 @@
 .cards__text {
   position: absolute;
   top: 0;
-  padding-top: 63px;
   padding-bottom: 63px;
   padding-left: 24px;
   padding-right: 24px;
   /* transform: translate(50%, 50%); */
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--adress-color);
-  max-width: 370px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  width: 100%;
   line-height: 1.55;
   /* or 156% */
   transition: transform 250ms;
@@ -117,6 +115,31 @@
   letter-spacing: 0.03em;
   opacity: 0;
   transform: translateY(100%);
+}
+
+@media screen and (max-width: 330px) {
+  .cards__text {
+    padding-top: 45px;
+    font-size: 11px;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 331px) {
+  .cards__text {
+    font-size: 15px;
+    height: 100%;
+    padding-top: 45px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .cards__text {
+    font-size: 18px;
+    padding-top: 63px;
+    max-width: 370px;
+  }
 }
 
 .cards__job {
@@ -769,9 +792,10 @@ h3 {
   margin-right: 0px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .gallery__item {
     margin-bottom: 15px;
+    margin-left: 15px;
   }
 }
 
@@ -789,7 +813,7 @@ h3 {
   padding-inline-start: 0px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .gallery__list {
     margin-bottom: 50px;
     justify-content: center;
@@ -1764,6 +1788,11 @@ img {
   margin-bottom: 64px;
 }
 
+.mobile-menu__contakt {
+  text-decoration: none;
+  list-style: none;
+}
+
 .mobile-menu--tell {
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -1787,6 +1816,8 @@ img {
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+  text-decoration: none;
+  list-style: none;
   color: #757575;
 }
 
